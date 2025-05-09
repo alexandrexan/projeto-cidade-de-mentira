@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #a29059;
+    --cor02: #2d2716;
+    --cor03: #544329;
+    --cor04: #574d23;
+
+    --fonte-destaque: "Permanent Marker", 'cursive';
+    --fonte-textos: "Sriracha", 'cursive';
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.034);
+}
+
+header {
+    background-color: var(--cor01);
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 10vw;
+    padding-top: 50px;
+}
+
+header p {
+    padding-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+header p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.356)
+}
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.301);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section {
+    font-family: var(--fonte-textos);
+    font-size: 4vw;
+    white-space: pre-line;
+    padding-top: 0vh;
+    padding-bottom: 10vh;
+    padding-left: 35px;
+    line-height: 2.5em;
+}
+
+section#img1 {
+    background-image: url(imagens/capa-album.jpeg);
+    background-attachment: fixed;
+
+}
+
+section#img2 {
+    background-image: url(imagens/capa-album.jpeg);
+    background-attachment: fixed;
+
+}
+
+footer {
+    background-color: var(--cor01);
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}

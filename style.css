@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sriracha&display=swap');
 
 * {
@@ -35,14 +33,18 @@ header h1 {
     font-family: var(--fonte-destaque);
     font-variant: small-caps;
     font-weight: normal;
-    font-size: 10vw;
-    padding-top: 50px;
+    font-size: 14vw;
+    padding-top: 36px;
 }
 
 header p {
-    padding-bottom: 50px;
+    padding-bottom: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+}
+
+header p.header-credits {
+    padding-bottom: 10px;
 }
 
 header p a {
@@ -51,18 +53,35 @@ header p a {
     color: black;
 }
 
+header p a.cta-link {
+    display: inline-block;
+    margin: 8px 0 6px;
+    padding: 10px 14px;
+    background-color: var(--cor02);
+    color: var(--cor01);
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+}
+
+header p a.cta-link:hover {
+    text-decoration: none;
+    filter: brightness(1.08);
+}
+
 a:hover {
     text-decoration: underline;
 }
 
 section.normal {
-    background-color: white;
-    color: black;
+    background-color: var(--cor02);
+    color: var(--cor01);
 }
 
 section.imagem {
     background-color: rgba(0, 0, 0, 0.733);
-    color: white;
+    color: #ffffff;
     box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.356)
 }
 
@@ -75,24 +94,23 @@ section.imagem p {
 
 section {
     font-family: var(--fonte-textos);
-    font-size: 4vw;
+    font-size: 6.4vw;
     white-space: pre-line;
     padding-top: 0vh;
     padding-bottom: 10vh;
-    padding-left: 35px;
-    line-height: 2.5em;
+    padding-left: 22px;
+    padding-right: 22px;
+    line-height: 2.6em;
 }
 
 section#img1 {
     background-image: url(imagens/capa-album.jpeg);
-    background-attachment: fixed;
-
+    background-attachment: scroll;
 }
 
 section#img2 {
     background-image: url(imagens/capa-album.jpeg);
-    background-attachment: fixed;
-
+    background-attachment: scroll;
 }
 
 footer {
@@ -106,4 +124,86 @@ footer a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 7.5vw;
+        padding-top: 44px;
+    }
+
+    header p {
+        padding-bottom: 44px;
+        font-size: 17px;
+    }
+
+    header p.header-hint {
+        font-size: 14px;
+    }
+
+    header p a.cta-link {
+        font-size: 13px;
+        padding: 12px 18px;
+    }
+
+    section {
+        font-size: 3.6vw;
+        padding-left: 32px;
+        padding-right: 32px;
+        line-height: 2.7em;
+    }
+
+    section.player {
+        padding: 28px 24px 34px;
+    }
+
+    section.player .player-title {
+        font-size: 5vw;
+    }
+
+    section#img1,
+    section#img2 {
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 5.5vw;
+        padding-top: 56px;
+    }
+
+    header p {
+        padding-bottom: 56px;
+        font-size: 19px;
+    }
+
+    header p.header-hint {
+        font-size: 15px;
+    }
+
+    header p a.cta-link {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    section {
+        font-size: 2.4vw;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10vh;
+        line-height: 2.8em;
+    }
+
+    section.player {
+        padding: 32px 28px 40px;
+    }
+
+    section.player .player-title {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    
 }

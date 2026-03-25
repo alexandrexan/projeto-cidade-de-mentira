@@ -1,9 +1,5 @@
 # Cidade de Mentira
 
-
-
-![preview do projeto](./assets/preview.png)
-
 ## Visão geral
 Página estática construída para explorar **tipografia como elemento central de interface**, com foco em leitura, contraste e impacto visual imediato. A estrutura prioriza hierarquia clara e ritmo, conduzindo o usuário ao longo do conteúdo sem dependência de scripts.
 
